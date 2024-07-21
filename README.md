@@ -2,6 +2,21 @@
 
 progress build ...
 
+using Myth/Auth library for authanticate
+
+## Requirement
+
+Framework Codeigniter >= 4.5
+PHP >= 8.1
+
+
+## Featured
+
+- [x] Global access using Api-Key
+- [x] Authorization Bearer <token>
+- [x] CRUD User, Role, Permission default from Myth/Auth
+- [ ] Example postman
+
 
 # postman
 

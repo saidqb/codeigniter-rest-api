@@ -8,8 +8,6 @@ class Auth extends BaseController
 {
     public function login(): string
     {
-        return '';
+        return 'Login';
     }
-
- 
 }

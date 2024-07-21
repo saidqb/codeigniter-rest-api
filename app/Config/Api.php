@@ -4,5 +4,5 @@ namespace Config;
 
 class Api
 {
-    public static $api_key = '';
+    public static $apiKey = 'YOUR_API_KEY';
 }
