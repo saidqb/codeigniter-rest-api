@@ -55,7 +55,7 @@ abstract class BaseController extends Controller
     protected $db;
 
 
-    protected function __construct()
+    public function __construct()
     {
         $this->initResponse();
 
@@ -63,9 +63,6 @@ abstract class BaseController extends Controller
 
         $this->initDb();
 
-
-        print_r($this->selectAs('users', 'id'));
-        die;
     }
 
     /**

@@ -5,10 +5,10 @@ namespace App\Controllers;
 use App\Core\BaseController;
 
 use Saidqb\CorePhp\ResponseCode;
+use Saidqb\CodeigniterSupport\QueryFilter;
 
 class Auth extends BaseController
 {
-
     public function __construct()
     {
         parent::__construct();
@@ -19,10 +19,13 @@ class Auth extends BaseController
 
     public function login()
     {
-        $data = [
+        
+        $data['item'] = [
             'test' => 'login',
             'abc' => '123',
         ];
+
+        $data['token'] = '1234567890';
         
         return $this->response($data, ResponseCode::HTTP_OK);
     }

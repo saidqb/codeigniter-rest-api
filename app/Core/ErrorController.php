@@ -2,6 +2,8 @@
 
 namespace App\Core;
 
+use Saidqb\CorePhp\ResponseCode;
+
 
 /**
  * Class AuthController
@@ -13,17 +15,10 @@ namespace App\Core;
  *
  * For security be sure to declare any new methods as protected or private.
  */
-class AuthController extends BaseController
+class ErrorController extends BaseController
 {
-
-    protected $auth;
-    
-    public function __construct()
+    public function show404()
     {
-        parent::__construct();
-
-        $this->auth  = service('authentication');
-
+        return $this->response(ResponseCode::HTTP_NOT_FOUND, ResponseCode::HTTP_NOT_FOUND_MESSAGE);
     }
-
 }
