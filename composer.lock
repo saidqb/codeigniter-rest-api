@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "937dfdc164ff19c8ed479821bbb73063",
+    "content-hash": "bedb6bbf81d3df0b75511b2e3ff113e0",
     "packages": [
         {
             "name": "doctrine/collections",
@@ -301,6 +301,57 @@
                 "source": "https://github.com/php-fig/log/tree/3.0.0"
             },
             "time": "2021-07-14T16:46:02+00:00"
+        },
+        {
+            "name": "saidqb/codeigniter-support",
+            "version": "v4.5.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/saidqb/codeigniter-support.git",
+                "reference": "da8e059445bb166daabca15589c8ff1017585cd9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/saidqb/codeigniter-support/zipball/da8e059445bb166daabca15589c8ff1017585cd9",
+                "reference": "da8e059445bb166daabca15589c8ff1017585cd9",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/collections": "^2.2",
+                "phlak/strgen": "^3.0",
+                "php": "^8.1",
+                "str/str": "^1.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "10.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Saidqb\\CodeigniterSupport\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "saidqb",
+                    "email": "saidqb@gmail.com"
+                }
+            ],
+            "description": "codeigniter-support",
+            "keywords": [
+                "dependency",
+                "library",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/saidqb/codeigniter-support/issues",
+                "source": "https://github.com/saidqb/codeigniter-support/tree/v4.5.11"
+            },
+            "time": "2024-07-23T15:01:10+00:00"
         },
         {
             "name": "saidqb/core-php",

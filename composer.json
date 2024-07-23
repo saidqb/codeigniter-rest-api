@@ -15,6 +15,7 @@
         "ext-mbstring": "*",
         "laminas/laminas-escaper": "^2.13",
         "psr/log": "^3.0",
+        "saidqb/codeigniter-support": "^4.5",
         "saidqb/core-php": "^8.1"
     },
     "require-dev": {
