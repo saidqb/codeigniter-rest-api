@@ -41,7 +41,8 @@ class Autoload extends AutoloadConfig
      */
     public $psr4 = [
         APP_NAMESPACE => APPPATH,
-        'Myth\Auth'   => APPPATH . 'ThirdParty/myth-auth/src',
+        'Myth\Auth'   => APPPATH . 'ThirdParty/myth/auth/src',
+        'Saidqb\CodeigniterSupport'   => APPPATH . 'ThirdParty/saidqb/codeigniter-support/src',
     ];
 
     /**

@@ -9,6 +9,13 @@ use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 use Psr\Log\LoggerInterface;
 
+use Saidqb\CorePhp\Response;
+use Saidqb\CorePhp\ResponseCode;
+use Saidqb\CorePhp\Lib\Check;
+
+use Saidqb\CodeigniterSupport\HasSupport;
+use Config\Api;
+
 /**
  * Class BaseController
  *
@@ -21,6 +28,8 @@ use Psr\Log\LoggerInterface;
  */
 abstract class BaseController extends Controller
 {
+    use HasSupport;
+
     /**
      * Instance of the main Request object.
      *
@@ -43,6 +52,22 @@ abstract class BaseController extends Controller
      */
     // protected $session;
 
+    protected $db;
+
+
+    protected function __construct()
+    {
+        $this->initResponse();
+
+        $this->db = \Config\Database::connect();
+
+        $this->initDb();
+
+
+        print_r($this->selectAs('users', 'id'));
+        die;
+    }
+
     /**
      * @return void
      */
@@ -53,6 +78,5 @@ abstract class BaseController extends Controller
 
         // Preload any models, libraries, etc, here.
 
-        // E.g.: $this->session = \Config\Services::session();
     }
 }

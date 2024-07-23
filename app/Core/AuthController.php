@@ -2,10 +2,6 @@
 
 namespace App\Core;
 
-use CodeIgniter\Controller;
-use CodeIgniter\HTTP\RequestInterface;
-use CodeIgniter\HTTP\ResponseInterface;
-use Psr\Log\LoggerInterface;
 
 /**
  * Class AuthController
@@ -19,32 +15,15 @@ use Psr\Log\LoggerInterface;
  */
 abstract class AuthController extends BaseController
 {
+
+    protected $auth;
     
-     protected $auth;
-
-    /**
-     * @var AuthConfig
-     */
-    protected $config;
-
-    /**
-     * @var Session
-     */
-    protected $session;
-
-
-
-    public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
+    public function __construct()
     {
-        // Do Not Edit This Line
-        parent::initController($request, $response, $logger);
+        parent::__construct();
 
-        $this->session = service('session');
-
-        $this->config = config('Auth');
-        $this->auth   = service('authentication');
+        $this->auth  = service('authentication');
 
     }
 
-    
 }
